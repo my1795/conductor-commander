@@ -15,7 +15,9 @@ val quarkusPlatformVersion: String by project
 val ktor_version: String by project
 
 dependencies {
-    implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}",))
+    implementation("io.quarkus:quarkus-rest-client")
+    implementation("io.quarkus:quarkus-rest-client-jackson")
+    implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-picocli")
     implementation("io.quarkus:quarkus-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -24,6 +26,10 @@ dependencies {
     testImplementation("io.quarkus:quarkus-junit5")
     implementation("io.ktor:ktor-client-core:$ktor_version")
     implementation("io.ktor:ktor-client-cio:$ktor_version")
+    // https://mvnrepository.com/artifact/com.netflix.conductor/conductor-client
+    implementation("com.netflix.conductor:conductor-client:3.3.6")
+    implementation("com.netflix.conductor:conductor-common:3.3.6")
+
 
 }
 
