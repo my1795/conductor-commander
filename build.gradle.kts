@@ -30,7 +30,7 @@ dependencies {
     implementation("cglib:cglib:3.3.0")
     implementation("com.sun.jersey:jersey-client:1.19.4")
     implementation("javax.ws.rs:javax.ws.rs-api:2.0.1")
-    implementation("org.glassfish.jersey.core:jersey-common:2.22.2")
+    implementation("org.glassfish.jersey.core:jersey-common:2.30")
 
 }
 
