@@ -2,6 +2,8 @@ package io.my1795
 
 import com.netflix.conductor.client.http.TaskClient
 import io.my1795.metadata.TitleCapitalizer
+import io.my1795.workflow.WorkflowCommander
+import io.quarkus.picocli.runtime.annotations.TopCommand
 import jakarta.inject.Inject
 import picocli.CommandLine
 import picocli.CommandLine.Command
@@ -10,20 +12,12 @@ import kotlin.system.exitProcess
 
 
 @Command(
-    name = "checksum", mixinStandardHelpOptions = true, version = ["checksum 4.0"],
-    description = ["Prints the checksum (SHA-256 by default) of a file to STDOUT."]
+    name = "cnd", mixinStandardHelpOptions = true, version = ["conductor-commander 1.0"],
+    description = ["Netflix Conductor Commander"], subcommands = [WorkflowCommander::class]
 )
+@TopCommand
 class ConductorCommander : Callable<Int> {
-
-    @CommandLine.Parameters(index = "0", description = ["The file whose checksum to calculate."])
-    lateinit var capitalized: String
-    var taskClient = TaskClient()
-    @Inject
-    lateinit var titleCapitalizer: TitleCapitalizer
     override fun call(): Int {
-        println(titleCapitalizer.capitalize(capitalized))
-        var search = taskClient.search(capitalized).results
-        println("working taskClient: ${search}")
         return 0
     }
 }
