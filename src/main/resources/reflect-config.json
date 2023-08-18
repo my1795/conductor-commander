@@ -1,0 +1,127 @@
+[
+  {
+    "name":"com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setJSONPFunctionName","parameterTypes":["java.lang.String"] }, {"name":"version","parameterTypes":[] }]
+  },
+  {
+    "name":"com.sun.jersey.api.client.RequestWriter",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "methods":[{"name":"getMessageBodyWorkers","parameterTypes":[] }, {"name":"handle","parameterTypes":["com.sun.jersey.api.client.ClientRequest"] }, {"name":"setMessageBodyWorkers","parameterTypes":["com.sun.jersey.spi.MessageBodyWorkers"] }]
+  },
+  {
+    "name":"com.sun.jersey.client.urlconnection.URLConnectionClientHandler",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "methods":[{"name":"handle","parameterTypes":["com.sun.jersey.api.client.ClientRequest"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.entity.ByteArrayProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getSize","parameterTypes":["byte[]","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isReadable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isWriteable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"readFrom","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.InputStream"] }, {"name":"supports","parameterTypes":["java.lang.Class"] }, {"name":"writeTo","parameterTypes":["byte[]","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.entity.DocumentProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":["com.sun.jersey.spi.inject.Injectable","com.sun.jersey.spi.inject.Injectable"] }, {"name":"isReadable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isWriteable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"readFrom","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.InputStream"] }, {"name":"writeTo","parameterTypes":["org.w3c.dom.Document","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.entity.FileProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getSize","parameterTypes":["java.io.File","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isReadable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isWriteable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"readFrom","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.InputStream"] }, {"name":"writeTo","parameterTypes":["java.io.File","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.entity.FormMultivaluedMapProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"isReadable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isWriteable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"readFrom","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.InputStream"] }, {"name":"writeTo","parameterTypes":["javax.ws.rs.core.MultivaluedMap","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.entity.FormProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"isReadable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isWriteable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"readFrom","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.InputStream"] }, {"name":"writeTo","parameterTypes":["com.sun.jersey.api.representation.Form","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.entity.InputStreamProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getSize","parameterTypes":["java.io.InputStream","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isReadable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isWriteable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"readFrom","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.InputStream"] }, {"name":"writeTo","parameterTypes":["java.io.InputStream","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.entity.ReaderProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"isReadable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isWriteable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"readFrom","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.InputStream"] }, {"name":"writeTo","parameterTypes":["java.io.Reader","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getSize","parameterTypes":["javax.ws.rs.core.StreamingOutput","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isWriteable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"writeTo","parameterTypes":["javax.ws.rs.core.StreamingOutput","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.entity.StringProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "queryAllPublicConstructors":true,
+    "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"isReadable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"isWriteable","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"readFrom","parameterTypes":["java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.InputStream"] }, {"name":"writeTo","parameterTypes":["java.lang.String","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.header.CacheControlProvider",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.header.CookieProvider",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.header.DateProvider",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.header.EntityTagProvider",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.header.MediaTypeProvider",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.header.NewCookieProvider",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.header.StringProvider",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  },
+  {
+    "name":"com.sun.jersey.core.impl.provider.header.URIProvider",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  },
+  {
+    "name":"com.sun.jersey.core.provider.AbstractMessageReaderWriterProvider",
+    "allDeclaredFields":true,
+    "queryAllPublicMethods":true,
+    "methods":[{"name":"getCharset","parameterTypes":["javax.ws.rs.core.MediaType"] }, {"name":"getSize","parameterTypes":["java.io.File","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"getSize","parameterTypes":["java.io.InputStream","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"getSize","parameterTypes":["java.lang.Object","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"getSize","parameterTypes":["byte[]","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType"] }, {"name":"readFrom","parameterTypes":["javax.ws.rs.core.MultivaluedMap","javax.ws.rs.core.MediaType","java.io.InputStream"] }, {"name":"readFromAsString","parameterTypes":["java.io.InputStream","javax.ws.rs.core.MediaType"] }, {"name":"supports","parameterTypes":["java.lang.Class"] }, {"name":"writeTo","parameterTypes":["java.awt.image.RenderedImage","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }, {"name":"writeTo","parameterTypes":["java.io.File","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }, {"name":"writeTo","parameterTypes":["java.io.InputStream","java.io.OutputStream"] }, {"name":"writeTo","parameterTypes":["java.io.InputStream","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }, {"name":"writeTo","parameterTypes":["java.io.Reader","java.io.Writer"] }, {"name":"writeTo","parameterTypes":["java.io.Reader","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }, {"name":"writeTo","parameterTypes":["java.lang.String","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }, {"name":"writeTo","parameterTypes":["javax.ws.rs.core.MultivaluedMap","javax.ws.rs.core.MediaType","java.io.OutputStream"] }, {"name":"writeTo","parameterTypes":["org.w3c.dom.Document","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }, {"name":"writeTo","parameterTypes":["byte[]","java.lang.Class","java.lang.reflect.Type","java.lang.annotation.Annotation[]","javax.ws.rs.core.MediaType","javax.ws.rs.core.MultivaluedMap","java.io.OutputStream"] }, {"name":"writeToAsString","parameterTypes":["java.lang.String","java.io.OutputStream","javax.ws.rs.core.MediaType"] }]
+  },
+  {
+    "name":"com.sun.jersey.spi.inject.InjectableProvider",
+    "queryAllPublicMethods":true,
+    "methods":[{"name":"getInjectable","parameterTypes":["com.sun.jersey.core.spi.component.ComponentContext","javax.ws.rs.core.Context","java.lang.reflect.Type"] }, {"name":"getScope","parameterTypes":[] }]
+  }
+]

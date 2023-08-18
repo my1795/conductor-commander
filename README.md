@@ -4,6 +4,14 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
+## Generating Tracing agent output for native images 
+
+```shell script
+./gradlew build -Dquarkus.package.type=uber-jar
+```
+
+`Run command java -agentlib:native-image-agent=config-output-dir=META-INF/native -jar build/cnd-runner.jar workflow search -id 45465
+`
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:

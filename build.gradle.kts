@@ -28,9 +28,9 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.11.4")
     implementation("com.google.guava:guava:30.0-jre")
     implementation("cglib:cglib:3.3.0")
-    implementation("com.sun.jersey:jersey-client:1.19.4")
+    implementation("org.glassfish.jersey.core:jersey-client:2.35")
     implementation("javax.ws.rs:javax.ws.rs-api:2.0.1")
-    implementation("org.glassfish.jersey.core:jersey-common:2.30")
+    implementation("org.glassfish.jersey.core:jersey-common:2.22.2")
 
 }
 
