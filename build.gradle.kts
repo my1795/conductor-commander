@@ -1,8 +1,7 @@
-import org.jetbrains.kotlin.gradle.utils.extendsFrom
-
 plugins {
     kotlin("jvm") version "1.8.22"
     kotlin("plugin.allopen") version "1.8.22"
+    kotlin("plugin.serialization") version "1.8.22"
     id("io.quarkus")
 }
 
@@ -22,16 +21,12 @@ dependencies {
     annotationProcessor("info.picocli:picocli-codegen:4.7.4")
     implementation("io.quarkus:quarkus-kotlin")
     implementation("io.quarkus:quarkus-arc")
-    //conductor
-    implementation("com.netflix.conductor:conductor-common:3.3.6")
-    implementation("com.netflix.conductor:conductor-client:3.3.6")
-    implementation("com.fasterxml.jackson.core:jackson-databind:2.11.4")
-    implementation("com.google.guava:guava:30.0-jre")
-    implementation("cglib:cglib:3.3.0")
-    implementation("org.glassfish.jersey.core:jersey-client:2.35")
-    implementation("javax.ws.rs:javax.ws.rs-api:2.0.1")
-    implementation("org.glassfish.jersey.core:jersey-common:2.22.2")
-
+    // http client
+    implementation("io.ktor:ktor-client-core:$ktor_version")
+    implementation("io.ktor:ktor-client-cio:$ktor_version")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
+    //serailization
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
 }
 
 group = "io.my1795"

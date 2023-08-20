@@ -1,13 +1,7 @@
 {
   "resources":{
-  "includes":[{
-    "pattern":"\\QMETA-INF/services/com.sun.jersey.spi.HeaderDelegateProvider\\E"
-  }, {
-    "pattern":"\\QMETA-INF/services/com.sun.jersey.spi.inject.InjectableProvider\\E"
-  }, {
-    "pattern":"\\QMETA-INF/services/javax.ws.rs.ext.MessageBodyReader\\E"
-  }, {
-    "pattern":"\\QMETA-INF/services/javax.ws.rs.ext.MessageBodyWriter\\E"
-  }]},
+    "includes":[{
+      "pattern":"\\QMETA-INF/services/io.ktor.serialization.kotlinx.KotlinxSerializationExtensionProvider\\E"
+    }]},
   "bundles":[]
 }

@@ -9,9 +9,12 @@ If you want to learn more about Quarkus, please visit its website: https://quark
 ```shell script
 ./gradlew build -Dquarkus.package.type=uber-jar
 ```
+generate tracing agent output 
+```shell script
+java -agentlib:native-image-agent=config-output-dir=META-INF/native -jar build/cnd-runner.jar workflow search -id 2d713d63-9d7d-4400-8b3c-6f08858567c5
 
-`Run command java -agentlib:native-image-agent=config-output-dir=META-INF/native -jar build/cnd-runner.jar workflow search -id 45465
-`
+```
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
