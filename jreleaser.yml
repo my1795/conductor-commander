@@ -1,0 +1,141 @@
+# Generated with JReleaser 1.7.0 at 2023-08-20T22:56:03.355982+03:00
+project:
+  name: cnd
+  version: 1.0.0
+  description: Netflix Conductor CLi
+  longDescription: cli app for netflix conductor workflow orchestrator
+  authors:
+    - Mustafa Yildirim
+  license: Apache-2.0
+  links:
+    homepage: https://github.com/my1795/conductor-commander
+  java:
+    groupId: io.my1795.client
+    version: 17
+  inceptionYear: 2023
+#
+assemble:
+  archive:
+    app:
+      active: ALWAYS
+      exported: true
+      stereotype: CLI
+      platform:
+        replacements:
+          aarch64-apple-darwin: mac
+      archiveName: 'app-{{projectVersion}}'
+
+      # The distribution type.
+      # Used to determine packager templates.
+      # Supported values are: [`JAVA_BINARY`, `SINGLE_JAR`, `JLINK`, `BINARY`, `NATIVE_PACKAGE`].
+      # Defaults to `BINARY`.
+      #
+      distributionType: BINARY
+
+      # Attach the current platform to the archiveName.
+      # Defaults to `false`.
+      #
+      attachPlatform: true
+
+      # Set of archive formats to use.
+      # Supported values are [`ZIP`, `TAR`, `TAR_BZ2`, `TAR_GZ`, `TAR_XZ`, `TAR_ZST`, `TBZ2`, `TGZ`, `TXZ`].
+      #
+      formats:
+        - ZIP
+        - TGZ
+
+      #
+      options:
+
+        # Set longFileMode for tar archives.
+        # Possible values are [`ERROR`, `GNU`, `POSIX`, `TRUNCATE`].
+        # Defaults to `ERROR`.
+        #
+        longFileMode: POSIX
+
+        # Set bigNumberMode for tar archives.
+        # Possible values are [`ERROR`, `GNU`, `POSIX`].
+        # Defaults to `ERROR`.
+        #
+        bigNumberMode: POSIX
+
+      # Defines a list of additional files as artifacts.
+      # These files will be added to the assembled archive.
+      #
+      artifacts:
+        - path: build/cnd
+          platform: osx-aarch_64
+
+      #
+      fileSets:
+        # The input directory to copy files from.
+        #
+        - input: build/
+
+          # Fail if the given `input` does not exist.
+          # Defaults to `true`.
+          #
+          failOnMissingInput: false
+
+          # A set of files and directory to include.
+          #
+          includes:
+            - 'cnd'
+#
+distributions:
+  # A named distribution
+  #
+  app:
+
+    # Enables or disables the distribution.
+    # Supported values are [`NEVER`, `ALWAYS`, `RELEASE`, `SNAPSHOT`].
+    # Defaults to `ALWAYS`.
+    #
+    active: ALWAYS
+
+    # The distribution type.
+    # Used to determine packager templates.
+    # Supported values are: [`JAVA_BINARY`, `SINGLE_JAR`, `JLINK`, `BINARY`, `FLAT-BINARY`, `NATIVE_PACKAGE`].
+    #
+    type: BINARY
+
+    # The stereotype of this distribution.
+    # Supported values are [`NONE`, `CLI`, `DESKTOP`, `WEB`, `MOBILE`].
+    # Defaults to `#{project.stereotype}`.
+    #
+    stereotype: CLI
+
+    #
+    executable:
+      # Name of the executable launcher.
+      # If left undefined, will use `#{distribution.name}`.
+      #
+      name: cnd
+      unixExtension: sh
+    tags:
+      - cli
+      - cnd
+    platform:
+      # Key value pairs.
+      # Keys match a full platform or an os.name, os.arch.
+      # Same rules apply as in Platform.
+      #
+      replacements:
+        osx-x86_64: mac
+
+    # A list of artifacts.
+    # At least on entry must be present.
+    #
+    artifacts:
+      - path: build/cnd
+        platform: osx-aarch_64
+#
+release:
+  github:
+    enabled: true
+    connectTimeout: 20
+    readTimeout: 60
+    owner: my1795
+    name: conductor-commander
+    host: github.com
+    username: my1795

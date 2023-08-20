@@ -1,7 +1,10 @@
+
+
 plugins {
     kotlin("jvm") version "1.8.22"
     kotlin("plugin.allopen") version "1.8.22"
     kotlin("plugin.serialization") version "1.8.22"
+    id("org.jreleaser") version "1.7.0"
     id("io.quarkus")
 }
 
