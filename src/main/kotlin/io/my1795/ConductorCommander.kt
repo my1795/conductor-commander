@@ -9,7 +9,7 @@ import kotlin.system.exitProcess
 
 
 @Command(
-    name = "cnd", mixinStandardHelpOptions = true, version = ["conductor-commander 1.0"],
+    name = "cnd", mixinStandardHelpOptions = true, version = ["conductor-commander 1.0.1"],
     description = ["Netflix Conductor Commander"], subcommands = [WorkflowCommander::class]
 )
 @TopCommand

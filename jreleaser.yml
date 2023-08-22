@@ -1,7 +1,7 @@
 # Generated with JReleaser 1.7.0 at 2023-08-20T22:56:03.355982+03:00
 project:
   name: cnd
-  version: 1.0.0
+  version: 1.0.1
   description: Netflix Conductor CLi
   longDescription: cli app for netflix conductor workflow orchestrator
   authors:
@@ -16,14 +16,14 @@ project:
 #
 assemble:
   archive:
-    app:
+    conductor-commander:
       active: ALWAYS
       exported: true
       stereotype: CLI
       platform:
         replacements:
           aarch64-apple-darwin: mac
-      archiveName: 'app-{{projectVersion}}'
+      archiveName: 'conductor-commander-{{projectVersion}}'
 
       # The distribution type.
       # Used to determine packager templates.
@@ -85,7 +85,7 @@ assemble:
 distributions:
   # A named distribution
   #
-  app:
+  conductor-commander:
 
     # Enables or disables the distribution.
     # Supported values are [`NEVER`, `ALWAYS`, `RELEASE`, `SNAPSHOT`].
@@ -129,10 +129,30 @@ distributions:
     artifacts:
       - path: build/cnd
         platform: osx-aarch_64
+
 #
+packagers:
+  brew:
+    active: ALWAYS
+    continueOnError: true
+    commitAuthor:
+      name: my1795
+      email: myldrm1025@gmail.com
+    formulaName: ConductorCommander
+    tap:
+      active: ALWAYS
+      owner: my1795
+      name: homebrew-tap
+      tagName: '{{distributionName}}-{{tagName}}'
+      branch: main
+      branchPush: 'main'
+      username: my1795
+      commitMessage: '{{distributionName}} {{tagName}}'
+    multiPlatform: false
 release:
   github:
     enabled: true
+    overwrite: true
     connectTimeout: 20
     readTimeout: 60
     owner: my1795
