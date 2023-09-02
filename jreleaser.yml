@@ -1,7 +1,7 @@
 # Generated with JReleaser 1.7.0 at 2023-08-20T22:56:03.355982+03:00
 project:
   name: cnd
-  version: 1.0.1
+  version: 1.0.2
   description: Netflix Conductor CLi
   longDescription: cli app for netflix conductor workflow orchestrator
   authors:
